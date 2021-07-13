@@ -33,6 +33,7 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin()
                 .loginPage("/showMyLoginPage")
                 .loginProcessingUrl("/authenticateTheUser")
+                .usernameParameter("email")
                 .permitAll()
                 .and()
                 .logout()
